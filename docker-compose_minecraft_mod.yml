@@ -1,0 +1,19 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server:stable
+    restart: always
+    container_name: Island_Adventure
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      LEVEL_NAME: Island Adventure
+      SERVER_NAME: Island Adventure
+      VERSION: 1.20.4
+      ONLINE_MODE: FALSE
+    volumes:
+      - /home/user/Downloads/minecraft_packs/Island_Adventure:/data/world
+    user: "1000:1000"
+networks:
+  minecraft_net:
+    external: true
