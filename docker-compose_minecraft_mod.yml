@@ -14,6 +14,8 @@ services:
     volumes:
       - /home/user/Downloads/minecraft_packs/Island_Adventure:/data/world
     user: "1000:1000"
+    networks:
+      - minecraft_net    
 networks:
   minecraft_net:
     external: true
