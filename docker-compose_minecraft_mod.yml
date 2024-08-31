@@ -1,21 +1,40 @@
 services:
   minecraft:
+    # Specifies the Minecraft server service
     image: itzg/minecraft-server:stable
+    # Ensures the container always restarts in case of failure
     restart: always
-    container_name: Island_Adventure
+    # Sets the container's name to Greek_City
+    container_name: Greek_City
     ports:
-      - "25565:25565"
+      # Maps port 25566 on the host to port 25565 in the container
+      - "25571:25565"
     environment:
+      # Accepts the Minecraft EULA (End User License Agreement)
       EULA: "TRUE"
-      LEVEL_NAME: Island Adventure
-      SERVER_NAME: Island Adventure
+      # Specifies the world name for the server
+      LEVEL_NAME: Greek_City
+      # Sets the server's display name
+      SERVER_NAME: Greek_City
+      # Configures the game mode to creative
+      GAMEMODE: creative
+      # Sets the difficulty level to easy
+      DIFFICULTY: easy
+      # Specifies the Minecraft server version
       VERSION: 1.20.4
+      # Disables online mode, allowing cracked versions to connect
       ONLINE_MODE: FALSE
     volumes:
-      - /home/user/Downloads/minecraft_packs/Island_Adventure:/data/world
+      # Maps the world directory on the host to the container
+      - /home/yourusername/Downloads/minecraft_packs/Greek_City/world:/data/world
+      # Maps the entire Greek_City directory on the host to the container's /data directory
+      - /home/yourusername/Downloads/minecraft_packs/Greek_City:/data/
+    # Runs the container as user ID 1000 and group ID 1000
     user: "1000:1000"
     networks:
+      # Connects the service to an external network named minecraft_net
       - minecraft_net    
 networks:
   minecraft_net:
+    # Specifies that the minecraft_net network is external (already created outside this Compose file)
     external: true
