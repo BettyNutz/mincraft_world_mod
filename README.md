@@ -1,4 +1,3 @@
-Here's a nicely formatted version for your GitHub README file:
 Minecraft Server Setup with Docker
 Prerequisites
 
