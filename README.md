@@ -1,7 +1,8 @@
 Install docker and docker compose
 
-Download your world data zip file to: (Note: This must match exacly to line 29 & 30 in the yml file):
-/home/yourusername/Downloads/minecraft_packs
+Download your world data zip file to: 
+/home/yourusername/Downloads/minecraft_packs  (Note: This must match exacly to line 29 & 30 in the yml file)
+
 
 Unzip your dl'd world data into minecraft_packs directory
 Note that some data in some zip files is in different dir structure inside the zip.
