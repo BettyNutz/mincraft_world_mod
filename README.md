@@ -1,6 +1,6 @@
 ---
 
-# Minecraft Server Setup with Docker
+# Minecraft Server Setup with Docker Compose
 
 ## Prerequisites
 
