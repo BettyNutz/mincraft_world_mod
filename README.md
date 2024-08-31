@@ -52,6 +52,6 @@
 
 ### 7. Wait for the Server to Start
 
-- The container will take a several minutes to start. Once it's up, your Minecraft server will be ready to use.
+- The container can take a several minutes to start. Once it's up, your Minecraft server will be ready to use.
 
 ---
