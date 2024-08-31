@@ -7,8 +7,8 @@ services:
     # Sets the container's name to Greek_City
     container_name: Greek_City
     ports:
-      # Maps port 25566 on the host to port 25565 in the container
-      - "25571:25565"
+      # Maps port 25566 on the host to port 25565 in the container (you can roll the number on the left if you add another server)
+      - "25566:25565"
     environment:
       # Accepts the Minecraft EULA (End User License Agreement)
       EULA: "TRUE"
