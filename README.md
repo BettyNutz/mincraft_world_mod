@@ -55,5 +55,3 @@
 - The container will take a few moments to start. Once it's up, your Minecraft server will be ready to use.
 
 ---
-
-You can copy and paste this markdown into your README file on GitHub.
