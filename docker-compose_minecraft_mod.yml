@@ -24,7 +24,7 @@ services:
       VERSION: 1.20.4
       # Disables online mode, allowing cracked versions to connect
       ONLINE_MODE: FALSE
-    volumes:
+    volumes: # These volumes ensure your mc data is on your host so you have a backup should you remove your container
       # Maps the world directory on the host to the container
       - /home/yourusername/Downloads/minecraft_packs/Greek_City/world:/data/world
       # Maps the entire Greek_City directory on the host to the container's /data directory
